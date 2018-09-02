@@ -6,14 +6,38 @@
     <title></title>
   </head>
   <body>
+      <div class="header-container">
+        <header>
+          <h1>Welcome to Goal Tracker</h1>
+          <p>Add your Goal list here.</p>
+        </header>
+      </div>
 
-<h1 class="intro">My profile</h1>
+      <div class="container">
 
-<img src="pp.jpg" alt="profile picture" height="128" width="128">
+        <p>
+          <label for="new-task">Add Goal</label><input id="new-task" type="text"><button>Add</button>
+        </p>
 
-<h3>A J M Hossain Ryadh</h3>
-<li>Student at Charles Darwin University</li>
-<p>Darwin, Australia</p>
+
+        <div class="listItems">
+        <h3>Goal List</h3>
+        <ul id="incomplete-tasks">
+          <li><input type="checkbox"><label>Gym (goal example)</label><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+          <li class="editMode"><input type="checkbox"><label>Goal example</label><input type="text" value="Edit Goal"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+        </ul>
+
+
+
+        <h3>Completed</h3>
+        <ul id="completed-tasks">
+          <li><input type="checkbox" checked><label>Completed goal example</label><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+        </ul>
+        </div>
+      </div>
+
+      <footer>A J M HOSSAIN RYADH </footer>
 
   </body>
+  <script src="jv.js"></script>
 </html>
